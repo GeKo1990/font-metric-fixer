@@ -26,7 +26,7 @@ This script takes a font file as an argument, applies common fixes to the font m
    - Set the `post.underlinePosition` to half of the `hhea.descent` value.
    - Set the `post.underlineThickness` to half of the `hhea.lineGap` value.
 
-These adjustments ensure that the font metrics are consistent and reasonable, which can help prevent rendering issues like the jumping behavior you experienced.
+These adjustments ensure that the font metrics are consistent and reasonable, which can help prevent rendering issues.
 
 ## License
 
