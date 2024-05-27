@@ -12,8 +12,11 @@ font = TTFont(font_path)
 # Apply fixes to the font metrics
 fixed_font = fix_font_metrics(font)
 
-# Save the fixed font to a new file
-fixed_font_path = font_path.rsplit('.', 1)[0] + '_fixed.ttf'
+# Get the file extension
+file_extension = font_path.rsplit('.', 1)[1]
+
+# Save the fixed font to a new file with the correct extension
+fixed_font_path = font_path.rsplit('.', 1)[0] + '_fixed.' + file_extension
 fixed_font.save(fixed_font_path)
 
 print(f"Fixed font saved as {fixed_font_path}")
